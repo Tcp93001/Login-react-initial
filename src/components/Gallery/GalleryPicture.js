@@ -6,7 +6,7 @@ function GalleryPicture() {
   const { imageId } = useParams();
   const [ searchParams ] = useSearchParams();
 
-  //El error estaba en que el valor que retorna setSearchParams es un string,
+  // El error estaba en que el valor que retorna setSearchParams es un string,
   // no un boolean. Por eso la linea 11 siempre regresa un estado false, porque
   // true booleano NO es igual a true string
   const useGrayScale = searchParams.get('grayscale') === "true";
